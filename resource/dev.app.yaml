@@ -1,0 +1,19 @@
+apps:
+  name: "api-banking"
+  version: "1.0.0"
+server:
+  port: 8081
+database:
+  postgres:
+    url: "localhost"
+    port: 5432
+    databaseName: "db_banking"
+    username: "postgres"
+    password: "password"
+    schema: "public."
+    connectionTimeout: "20s"
+    maxIdleConnection: 5
+    maxOpenConnection: 10
+    debugMode: true
+jwt:
+  secretKey: ""
